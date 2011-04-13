@@ -45,7 +45,8 @@ DateInput.prototype = {
     });
     tableShell += "</tr></thead><tbody></tbody></table>";
     
-    this.dateSelector = this.rootLayers = $('<div class="date_selector"></div>').append(nav, tableShell).insertAfter(this.input);
+//    this.dateSelector = this.rootLayers = $('<div class="date_selector"></div>').append(nav, tableShell).insertAfter(this.input);
+    this.dateSelector = this.rootLayers = $('<div class="date_selector"></div>').append(nav, tableShell).appendTo('body');
     
     if ($.browser.msie && $.browser.version < 7) {
       // The ieframe is a hack which works around an IE <= 6 bug where absolutely positioned elements
